@@ -1,3 +1,9 @@
+:root {
+  --primary-cyan: #00838f;
+  --light-cyan: #4fb3bf;
+  --dark-cyan: #005662;
+}
+
 * {
   margin: 0;
   padding: 0;
