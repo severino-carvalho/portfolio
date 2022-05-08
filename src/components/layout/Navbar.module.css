@@ -1,11 +1,10 @@
 .navbar {
     width: 100%;
-    min-height: 5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5em;
     background-color: #263238;
+    padding: .5em 0;
 }
 
 .navbar .logo {
@@ -26,6 +25,7 @@
 
 .navbar ul {
     display: flex;
+    align-items: center;
 }
 
 .navbar ul:hover a {
