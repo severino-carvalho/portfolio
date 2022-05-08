@@ -6,14 +6,24 @@ import styles from './Navbar.module.css';
 export default function Navbar({ props }) {
     return (
         <nav className={styles.navbar}>
-            <div>
-                <ImageVerified src={ImageSeverino} />
+
+            <div className={styles.logo}>
+                <div>
+                    <ImageVerified src={ImageSeverino} />
+                </div>
+                <div>
+                    <h2>Severino Carvalho</h2>
+                </div>
             </div>
 
-            <div>
-                <Link to='/'> Home </Link>
-                <Link to='/projects'> Projects </Link>
-            </div>
+            <ul>
+                <li>
+                    <Link to='/'> Home </Link>
+                </li>
+                <li>
+                    <Link to='/contacts'> Contacts </Link>
+                </li>
+            </ul>
         </nav>
     );
 }

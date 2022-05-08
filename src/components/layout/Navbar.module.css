@@ -8,19 +8,29 @@
     background-color: #263238;
 }
 
-.navbar h1,
-.navbar h2,
-.navbar h3,
-.navbar h4,
-.navbar h5,
-.navbar h6 {
+.navbar .logo {
     display: flex;
     align-items: center;
+    text-align: center;
     color: white;
+}
+
+.navbar .logo h2 {
+    margin-left: .4em;
+    flex-wrap: wrap;
 }
 
 .navbar h2 svg {
     margin-left: .1em;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul:hover a {
+    color: #b0bec5;
+    transition: color .3s ease-in-out;
 }
 
 .navbar a {
@@ -28,4 +38,11 @@
     color: #fff;
     margin-left: .5em;
     padding: .3em;
+    font-size: 1.1em;
+    transition: all .3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #fff !important;
+    transition: color .3s ease-in-out;
 }
