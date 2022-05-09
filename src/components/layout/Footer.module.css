@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    min-height: 100vmin;
+    padding-top: 2.5em;
+    background-color: #263238;
+    color: #fff;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .content a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #64b5f6;
+}
+
+.footer .content a svg {
+    font-size: 1.2em;
+    margin-right: .3em;
+    color: #2286c3;
+}
+
+.footer .content a:hover {
+    text-decoration: none;
+    color: #2286c3;
+    transition: color .25s ease-in-out;
+}
