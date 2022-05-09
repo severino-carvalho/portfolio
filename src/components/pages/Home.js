@@ -3,22 +3,29 @@ import styles from './Home.module.css';
 export default function Home() {
     return (
         <main className={styles.main}>
-            <h1>Maçãs</h1>
-            <p>A maçã é a fruta pomácea da macieira.</p>
-
+            <h1>Poema</h1>
+            <p>Rosas vermelhas florensem todo ano, se não pagar seu telefone vai entrar pelo cano.</p>
+            <hr/>
+            <br />
             <article>
-                <h2>Vermelho delicioso</h2>
-                <p>Estas maçãs vermelhas brilhantes são as mais comumente encontradas em muitos supermercados.</p>
-                <p>... </p>
-                <p>... </p>
+                <h2>Ei cara...</h2>
+                <p>Ei cara, você gosta de pipoca?</p>
+                <p>Você falou em pipoca?</p>
+                <p>Hurrum!</p>
+                <p>Que tipo?</p>
+                <p>Pipoca quente e na manteiga.</p>
+                <p>Falou quente e na manteiga?</p>
+            </article>
+            <hr />
+            <br />
+            <article>
+                <h2>Gato a jato</h2>
+                <p>Asas batendo</p>
+                <p>Macha de decolagem</p>
+                <p>Turbina e JÁ!</p>
             </article>
 
-            <article>
-                <h2>Granny Smith</h2>
-                <p>Essas suculentas maçãs verdes, são um ótimo recheio para torta de maçã.</p>
-                <p>... </p>
-                <p>... </p>
-            </article>
+            <br />
         </main>
     );
 }
