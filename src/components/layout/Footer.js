@@ -12,14 +12,15 @@ export default function Footer() {
                         <h2>Contact</h2>
                         <ul>
                             <li>
-                                <Link to=''>
+                                <a href="mailto:severinocarvalho14@gmail.com" target="_blank" rel='noreferrer'>
                                     <MdEmail /> severinocarvalho14@gmail.com
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link to=''>
+                                <a href="tel:+5584994650540">
                                     <MdPhone /> +55 (84) 99465-0540
-                                </Link>
+                                </a>
+
                             </li>
                             <li>
                                 <Link to=''>

@@ -30,3 +30,8 @@
     color: #2286c3;
     transition: color .25s ease-in-out;
 }
+
+.footer .content ul,
+.footer .content ul li {
+    padding-top: .5em;
+}
