@@ -7,9 +7,14 @@
 }
 
 .footer .content {
+    width: 100%;
+    /* 
+        Eixo principal: --- ;
+        Eixo secundario  |  ;
+        Flex: flex-grow, flex-shrink, flex-basis;
+        flex-grow: Elementos flex podem crescer ao longo do eixo principal
+    */
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .footer .content a {

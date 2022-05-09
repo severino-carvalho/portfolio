@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { MdEmail, MdPhone } from 'react-icons/md';
+import { MdEmail, MdFacebook, MdPhone } from 'react-icons/md';
+import { FaDiscord, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import Container from './Container';
 import styles from './Footer.module.css';
 
@@ -9,7 +9,7 @@ export default function Footer() {
             <Container >
                 <div className={styles.content}>
                     <div>
-                        <h2>Contact</h2>
+                        <h1>Contact</h1>
                         <ul>
                             <li>
                                 <a href="mailto:severinocarvalho14@gmail.com" target="_blank" rel='noreferrer'>
@@ -22,15 +22,36 @@ export default function Footer() {
                                 </a>
 
                             </li>
-                            <li>
-                                <Link to=''>
+                        </ul>
 
-                                </Link>
+                    </div>
+                    <div>
+                        <h1>Social</h1>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/severino-carvalho-019899175/" target="_blank" rel='noreferrer'>
+                                    <FaDiscord /> Discord
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://web.facebook.com/Netollyno/" target="_blank" rel='noreferrer'>
+                                    <MdFacebook /> Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/oh_netin/" target="_blank" rel='noreferrer'>
+                                    <FaInstagram /> Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/severino-carvalho-019899175/" target="_blank" rel='noreferrer'>
+                                    <FaLinkedin /> Linkedin
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </Container>
-        </footer>
+        </footer >
     );
 }
