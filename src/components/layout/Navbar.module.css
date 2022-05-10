@@ -5,6 +5,17 @@
     align-items: center;
     background-color: #263238;
     padding: .5em 0;
+
+    border-bottom-left-radius: .3em;
+    border-bottom-right-radius: .3em;
+    -webkit-border-bottom-left-radius: .3em;
+    -webkit-border-bottom-right-radius: .3em;
+    -moz-border-bottom-left-radius: .3em;
+    -moz-border-bottom-right-radius: .3em;
+    -o-border-bottom-left-radius: .3em;
+    -o-border-bottom-right-radius: .3em;
+    -ms-border-bottom-left-radius: .3em;
+    -ms-border-bottom-right-radius: .3em;
 }
 
 .navbar .logo {
