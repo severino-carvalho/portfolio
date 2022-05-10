@@ -60,11 +60,11 @@ export default function Footer() {
 
                 <div className={styles.developed}>
                     <p>
-                        Developed by
+                        {'Developed by '}
                         <span>
-                            <strong>
+                            <b>
                                 Severino Carvalho
-                            </strong>
+                            </b>
                         </span>
                     </p>
                 </div>
