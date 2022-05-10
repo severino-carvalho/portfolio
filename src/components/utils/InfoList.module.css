@@ -1,0 +1,27 @@
+.infoList a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #64b5f6;
+}
+
+.infoList a:hover {
+    text-decoration: none;
+    color: #2286c3;
+    transition: color .25s ease-in-out;
+}
+
+.infoList a svg {
+    font-size: 1.2em;
+    margin-right: .3em;
+    color: #2286c3;
+}
+
+.infoList ul {
+    width: max-content;
+}
+
+.infoList ul,
+.infoList ul li {
+    padding-top: .5em;
+}
