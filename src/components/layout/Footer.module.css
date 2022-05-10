@@ -1,3 +1,7 @@
+:root {
+    --hr-color: #6d6d6d;
+}
+
 .footer {
     width: 100%;
     padding-top: 2.5em;
@@ -29,8 +33,15 @@
     width: 100%;
 }
 
-.footer .content .comunication div {
-    margin-bottom: 2em;
+.footer .content .comunication>div {
+    margin: 1.5em 0;
+}
+
+.footer .content .comunication hr {
+    display: none;
+    border: 1px solid var(--hr-color);
+    background-color: var(--hr-color);
+    border-radius: 1em;
 }
 
 .footer .content .perfil {
@@ -53,6 +64,7 @@
 
 .footer .content .perfil>div p {
     padding-top: .45em;
+    text-align: justify;
 }
 
 .footer .content .perfil .ImgSeverino {
@@ -68,6 +80,7 @@
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
+    border: 2px solid #ffffff;
 }
 
 .footer .developed {
@@ -112,6 +125,7 @@
     }
 
     .footer .content .perfil {
+        width: 100%;
         order: -1;
     }
 
@@ -121,5 +135,9 @@
 
     .footer .developed p {
         padding: 0 3em;
+    }
+
+    .footer .content .comunication hr {
+        display: block;
     }
 }

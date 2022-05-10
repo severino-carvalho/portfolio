@@ -51,7 +51,9 @@ export default function Footer() {
             <Container >
                 <div className={styles.content}>
                     <div className={styles.comunication}>
+                        <hr />
                         <InfoList title={'Contact'} list={contacts} />
+                        <hr />
                         <InfoList title={'Social'} list={social} />
                     </div>
 
