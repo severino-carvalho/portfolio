@@ -2,7 +2,7 @@ import { MdEmail, MdFacebook, MdPhone } from 'react-icons/md';
 import { FaDiscord, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Container from './Container';
 import styles from './Footer.module.css';
-import InfoList from './InfoList';
+import InfoList from '../utils/InfoList';
 
 export default function Footer() {
     const contacts = [
@@ -59,9 +59,9 @@ export default function Footer() {
                         <div>
                             <div className={styles.ImgSeverino}>{ /**  Imagem via CSS */}</div >
                             <div>
-                                <h3>Computer Technician</h3>
+                                <h2>Computer Technician</h2>
                                 <p>Instituto Federal de Educação Ciência e Tecnologia do Rio Grande do Norte - IFRN</p>
-                                <h3>Internet Computing</h3>
+                                <h2>Internet Computing</h2>
                                 <p>Instituto Metrópole Digital - IMD</p>
                             </div>
                         </div>
