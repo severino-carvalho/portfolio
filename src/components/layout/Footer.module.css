@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    min-height: 100vmin;
+    min-height: 100vh;
     padding-top: 2.5em;
     background-color: #263238;
     color: #fff;
@@ -15,28 +15,33 @@
         flex-grow: Elementos flex podem crescer ao longo do eixo principal
     */
     display: flex;
+    flex-wrap: wrap;
 }
 
-.footer .content a {
+.footer .content div {
+    flex: 1 1 50%;
+    margin-bottom: 2.5em;
+}
+
+.footer .content div:nth-child(2n) {
+    padding-left: 3em;
+}
+
+/*  Mobile Configuration    */
+
+@media (max-width: 637px) {
+    .footer .content div:nth-child(2n) {
+        padding-left: 0em;
+    }
+}
+
+/*  ----- */
+
+.footer .developed {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    justify-items: end;
     align-items: center;
-    text-decoration: none;
-    color: #64b5f6;
-}
-
-.footer .content a svg {
-    font-size: 1.2em;
-    margin-right: .3em;
-    color: #2286c3;
-}
-
-.footer .content a:hover {
-    text-decoration: none;
-    color: #2286c3;
-    transition: color .25s ease-in-out;
-}
-
-.footer .content ul,
-.footer .content ul li {
-    padding-top: .5em;
+    padding: 3em;
 }
