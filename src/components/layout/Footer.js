@@ -50,25 +50,36 @@ export default function Footer() {
         <footer className={styles.footer}>
             <Container >
                 <div className={styles.content}>
-                    <InfoList title={'Contact'} list={contacts} />
-                    <InfoList title={'Social'} list={social} />
-                    <InfoList title={'Contact'} list={contacts} />
-                    <InfoList title={'Social'} list={social} />
-                    <InfoList title={'Contact'} list={contacts} />
-                    <InfoList title={'Social'} list={social} />
+                    <div className={styles.comunication}>
+                        <InfoList title={'Contact'} list={contacts} />
+                        <InfoList title={'Social'} list={social} />
+                    </div>
+
+                    <div className={styles.perfil}>
+                        <div>
+                            <div className={styles.ImgSeverino}>{ /**  Imagem via CSS */}</div >
+                            <div>
+                                <h3>Computer Technician</h3>
+                                <p>Instituto Federal de Educação Ciência e Tecnologia do Rio Grande do Norte - IFRN</p>
+                                <h3>Internet Computing</h3>
+                                <p>Instituto Metrópole Digital - IMD</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div className={styles.developed}>
-                    <p>
-                        {'Developed by '}
-                        <span>
-                            <b>
-                                Severino Carvalho
-                            </b>
-                        </span>
-                    </p>
-                </div>
             </Container>
+
+            <div className={styles.developed}>
+                <p>
+                    {'Developed by '}
+                    <span>
+                        {' Severino Carvalho'}
+                    </span>
+                </p>
+            </div>
+
         </footer >
     );
 }

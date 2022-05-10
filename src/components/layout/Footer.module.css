@@ -1,47 +1,125 @@
 .footer {
     width: 100%;
-    min-height: 100vh;
     padding-top: 2.5em;
     background-color: #263238;
     color: #fff;
+
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    -webkit-border-top-left-radius: .3em;
+    -webkit-border-top-right-radius: .3em;
+    -moz-border-top-left-radius: .3em;
+    -moz-border-top-right-radius: .3em;
+    -o-border-top-left-radius: .3em;
+    -o-border-top-right-radius: .3em;
+    -ms-border-top-left-radius: .3em;
+    -ms-border-top-right-radius: .3em;
+
+
 }
 
 .footer .content {
     width: 100%;
-    /* 
-        Eixo principal: --- ;
-        Eixo secundario  |  ;
-        Flex: flex-grow, flex-shrink, flex-basis;
-        flex-grow: Elementos flex podem crescer ao longo do eixo principal
-    */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em 0em 2em;
+}
+
+.footer .content .comunication {
+    width: 100%;
+}
+
+.footer .content .comunication div {
+    margin-bottom: 2em;
+}
+
+.footer .content .perfil {
+    width: 80%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
-.footer .content div {
-    flex: 1 1 50%;
-    margin-bottom: 2.5em;
+.footer .content .perfil>div {
+    width: 100%;
 }
 
-.footer .content div:nth-child(2n) {
-    padding-left: 3em;
+.footer .content .perfil>div h3 {
+    padding-top: 1em;
+    text-align: center;
+    font-weight: bold;
 }
 
-/*  Mobile Configuration    */
-
-@media (max-width: 637px) {
-    .footer .content div:nth-child(2n) {
-        padding-left: 0em;
-    }
+.footer .content .perfil>div p {
+    padding-top: .45em;
 }
 
-/*  ----- */
+.footer .content .perfil .ImgSeverino {
+    width: 11.5em;
+    height: 11.5em;
+    margin: 0 auto;
+    background-image: url('../../img/610_6670.jpg');
+    background-size: cover;
+    background-position: 50% 10%;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
 
 .footer .developed {
     width: 100%;
     display: flex;
     justify-content: center;
-    justify-items: end;
     align-items: center;
-    padding: 3em;
+    padding: 3em 0 2em;
+
+    background-color: #000a12;
+    border-top-left-radius: .3em;
+    border-top-right-radius: .3em;
+    -webkit-border-top-left-radius: .3em;
+    -webkit-border-top-right-radius: .3em;
+    -moz-border-top-left-radius: .3em;
+    -moz-border-top-right-radius: .3em;
+    -o-border-top-left-radius: .3em;
+    -o-border-top-right-radius: .3em;
+    -ms-border-top-left-radius: .3em;
+    -ms-border-top-right-radius: .3em;
+}
+
+.footer .developed p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.footer .developed p span {
+    font-weight: bold;
+}
+
+/*  Mobile Configuration    */
+
+@media (max-width: 650px) {
+    .footer .content {
+        grid-template-columns: 1fr;
+        padding-bottom: .5em;
+    }
+
+    .footer .content .perfil {
+        order: -1;
+    }
+
+    .footer .content .perfil {
+        padding-bottom: 2em;
+    }
+
+    .footer .developed p {
+        padding: 0 3em;
+    }
 }
