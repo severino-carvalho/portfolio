@@ -3,7 +3,7 @@ import styles from './InfoList.module.css';
 export default function InfoList({ title, list }) {
     return (
         <div className={styles.infoList}>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <ul>
                 {
                     list.map((item, index) => {

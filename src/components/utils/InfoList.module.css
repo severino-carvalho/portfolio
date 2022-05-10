@@ -19,9 +19,9 @@
 
 .infoList ul {
     width: max-content;
+    padding-top: .2em;
 }
 
-.infoList ul,
 .infoList ul li {
     padding-top: .5em;
 }
