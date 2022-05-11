@@ -3,29 +3,41 @@ import styles from './Home.module.css';
 export default function Home() {
     return (
         <main className={styles.main}>
-            <h1>Poema</h1>
-            <p>Rosas vermelhas florensem todo ano, se não pagar seu telefone vai entrar pelo cano.</p>
-            <hr/>
-            <br />
             <article>
-                <h2>Ei cara...</h2>
-                <p>Ei cara, você gosta de pipoca?</p>
-                <p>Você falou em pipoca?</p>
-                <p>Hurrum!</p>
-                <p>Que tipo?</p>
-                <p>Pipoca quente e na manteiga.</p>
-                <p>Falou quente e na manteiga?</p>
-            </article>
-            <hr />
-            <br />
-            <article>
-                <h2>Gato a jato</h2>
-                <p>Asas batendo</p>
-                <p>Macha de decolagem</p>
-                <p>Turbina e JÁ!</p>
-            </article>
+                <section>
+                    <h1>Who am I??</h1>
 
-            <br />
-        </main>
+                    <div>
+                        <div>
+                            <p>
+                                {`Hello, I'm Severino Carvalho, I have 20 years old. I'm Computer Technician by `}
+                                < b >
+                                    <a href="https://portal.ifrn.edu.br/campus/joaocamara" target={'_blank'} rel={'noreferrer'}>
+                                        {`IFRN-JC`}
+                                    </a>
+                                </b>
+                                {` (Instituto Federal de Educação Ciência e Tecnologia do Rio Grande do Norte - IFRN `}
+                                <i>Campus</i>
+                                {` João Câmara) and Internet Programming by `}
+                                <b>
+                                    <a href="https://www.metropoledigital.ufrn.br/portal/ensino/tecnico" target={'_blank'} rel={'noreferrer'}>
+                                        IMD
+                                    </a>
+                                </b>
+                                {` (Instituto Metrópole Digital - IMD/UFRN).`}
+                            </p>
+                        </div>
+                        <div className={styles.sectionImage}>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <p>
+                        {`Hello World...`}
+                    </p>
+                </section>
+            </article>
+        </main >
     );
 }

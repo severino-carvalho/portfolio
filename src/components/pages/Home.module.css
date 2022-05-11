@@ -1,3 +1,41 @@
 .main {
-    padding-top: 2.5em;
+    padding: 2.5em 0em;
+}
+
+.main h1 {
+    font-size: 32px;
+}
+
+.main article section {
+    width: 100%;
+}
+
+.main article section div {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}
+
+.main article section .sectionImage {
+    width: 15em;
+    height: 10em;
+    background-image: url('../../img/home1.jpg');
+    background-size: cover;
+    border-radius: 1em;
+}
+
+.main article p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.main article p a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main article p a:hover {
+    color: #2286c3;
+    text-decoration: underline;
+    transition: all .25s ease-in-out;
 }
