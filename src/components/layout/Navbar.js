@@ -3,8 +3,11 @@ import ImageVerified from '../utils/ImageVerified';
 import ImageSeverino from '../../img/Severino.jpg';
 import styles from './Navbar.module.css';
 import Container from './Container';
+import { useState } from 'react';
 
 export default function Navbar({ props }) {
+    const [selectItem, setSelectItem] = useState('home');
+
     return (
         <nav className={styles.navbar}>
             <Container>
@@ -18,11 +21,8 @@ export default function Navbar({ props }) {
                 </div>
 
                 <ul>
-                    <li>
+                    <li key={'home'}>
                         <Link to='/'> Home </Link>
-                    </li>
-                    <li>
-                        <Link to='/contacts'> Contacts </Link>
                     </li>
                 </ul>
             </Container>
