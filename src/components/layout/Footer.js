@@ -63,7 +63,7 @@ export default function Footer() {
                             <div>
                                 <h2>Computer Technician</h2>
                                 <p>Instituto Federal de Educação Ciência e Tecnologia do Rio Grande do Norte - IFRN</p>
-                                <h2>Internet Computing</h2>
+                                <h2>Internet Programming</h2>
                                 <p>Instituto Metrópole Digital - IMD</p>
                             </div>
                         </div>
