@@ -10,10 +10,11 @@
     width: 100%;
 }
 
-.main article section div {
+.main article section > div {
     display: grid;
     grid-template-columns: 4fr 1fr;
     align-items: center;
+    grid-gap: 1em;
 }
 
 .main article section .sectionImage {
@@ -30,6 +31,7 @@
 }
 
 .main article p a {
+    font-weight: bolder;
     text-decoration: none;
     color: #000000;
 }
