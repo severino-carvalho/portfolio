@@ -1,49 +1,73 @@
 import { MdEmail, MdFacebook, MdPhone } from 'react-icons/md';
-import { FaDiscord, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Container from './Container';
 import styles from './Footer.module.css';
 import InfoList from '../utils/InfoList';
 
 export default function Footer() {
     const contacts = [
-        (
-            <a href="mailto:severinocarvalho14@gmail.com" target={'_blank'} rel={'noreferrer'}>
-                <MdEmail /> severinocarvalho14@gmail.com
-            </a>
-        ),
-        (
-            <a href="tel:+5584994650540">
-                <MdPhone /> +55 (84) 99465-0540
-            </a>
-        )
+        {
+            icon: <MdEmail />,
+            href: 'mailto:severinocarvalho14@gmail.com',
+            target: '_blank',
+            text: 'severinocarvalho14@gmail.com',
+            class: 'email'
+        },
+        {
+            icon: <MdPhone />,
+            href: 'tel:+5584994650540',
+            target: '_self',
+            text: '+55 (84) 99465-0540',
+            class: 'phone'
+        }
     ];
 
     const social = [
-        (
-            <a href="https://discord.gg/89BGgpSA" target="_blank" rel='noreferrer'>
-                <FaDiscord /> Discord
-            </a>
-        ),
-        (
-            <a href="https://web.facebook.com/Netollyno/" target="_blank" rel='noreferrer'>
-                <MdFacebook /> Facebook
-            </a>
-        ),
-        (
-            <a href="https://www.instagram.com/oh_netin/" target="_blank" rel='noreferrer'>
-                <FaInstagram /> Instagram
-            </a>
-        ),
-        (
-            <a href="https://www.linkedin.com/in/severino-carvalho-019899175/" target="_blank" rel='noreferrer'>
-                <FaLinkedin /> Linkedin
-            </a>
-        ),
-        (
-            <a href="https://wa.me/5584994650540" target="_blank" rel='noreferrer'>
-                <FaWhatsapp /> Whatsapp
-            </a>
-        )
+        {
+            icon: <FaDiscord />,
+            href: 'https://discord.gg/89BGgpSA',
+            target: '_blank',
+            text: 'Discord',
+            class: 'discord'
+        },
+        {
+            icon: <MdFacebook />,
+            href: 'https://web.facebook.com/Netollyno/',
+            target: '_blank',
+            text: 'Facebook',
+            class: 'facebook'
+        },
+        {
+            icon: <FaInstagram />,
+            href: 'https://www.instagram.com/oh_netin/',
+            target: '_blank',
+            text: 'Instagram',
+            class: 'instagram'
+        },
+        {
+            icon: <FaLinkedin />,
+            href: 'https://www.linkedin.com/in/severino-carvalho-019899175/',
+            target: '_blank',
+            text: 'Linkedin',
+            class: 'linkedin'
+        },
+        {
+            icon: <FaWhatsapp />,
+            href: 'https://wa.me/5584994650540',
+            target: '_blank',
+            text: 'Whatsapp',
+            class: 'whatsapp'
+        }
+    ];
+
+    const dev = [
+        {
+            icon: <FaGithub />,
+            href: 'https://github.com/severino-carvalho',
+            target: '_blank',
+            text: 'GitHub',
+            class: 'github'
+        }
     ]
 
     return (
@@ -72,6 +96,8 @@ export default function Footer() {
                         <InfoList title={'Contact'} list={contacts} />
                         <hr />
                         <InfoList title={'Social'} list={social} />
+                        <hr />
+                        <InfoList title={'Dev'} list={dev}/>
                     </div>
 
                 </div>

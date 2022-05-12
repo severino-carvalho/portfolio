@@ -2,19 +2,22 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #0091ea;
+    color: #80d6ff;
 }
 
 .infoList a:hover {
     text-decoration: none;
-    color: #2286c3;
+    color: #1e88e5;
     transition: color .25s ease-in-out;
+}
+
+.infoList a span {
+    opacity: .7;
 }
 
 .infoList a svg {
     font-size: 1.2em;
     margin-right: .3em;
-    color: #2286c3;
 }
 
 .infoList ul {
@@ -24,4 +27,36 @@
 
 .infoList ul li {
     padding-top: .5em;
+}
+
+.email svg {
+    color: #db4a39;
+}
+
+.phone svg {
+    color: gray;
+}
+
+.discord svg {
+    color: #7289da;
+}
+
+.facebook svg {
+    color: #3b5998;
+}
+
+.instagram svg {
+    color: #517fa4;
+}
+
+.linkedin svg {
+    color: #007bb6;
+}
+
+.whatsapp svg {
+    color: #34af23;
+}
+
+.github svg {
+    color: #171515;
 }

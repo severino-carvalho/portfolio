@@ -9,9 +9,9 @@ export default function InfoList({ title, list }) {
                     list.map((item, index) => {
                         return (
                             <li key={index}>
-                                {
-                                    item
-                                }
+                                <a className={styles[item.class]} href={item.href} target={item.target} rel={''}>
+                                    {item.icon} <span>{item.text}</span>
+                                </a>
                             </li>
                         )
                     })
