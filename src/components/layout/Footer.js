@@ -10,6 +10,7 @@ export default function Footer() {
             icon: <MdEmail />,
             href: 'mailto:severinocarvalho14@gmail.com',
             target: '_blank',
+            title: 'Email',
             text: 'severinocarvalho14@gmail.com',
             class: 'email'
         },
@@ -17,6 +18,7 @@ export default function Footer() {
             icon: <MdPhone />,
             href: 'tel:+5584994650540',
             target: '_self',
+            title: 'Phone',
             text: '+55 (84) 99465-0540',
             class: 'phone'
         }
@@ -27,6 +29,7 @@ export default function Footer() {
             icon: <FaDiscord />,
             href: 'https://discord.gg/89BGgpSA',
             target: '_blank',
+            title: 'Discord',
             text: 'Discord',
             class: 'discord'
         },
@@ -34,6 +37,7 @@ export default function Footer() {
             icon: <MdFacebook />,
             href: 'https://web.facebook.com/Netollyno/',
             target: '_blank',
+            title: 'Facebook',
             text: 'Facebook',
             class: 'facebook'
         },
@@ -41,6 +45,7 @@ export default function Footer() {
             icon: <FaInstagram />,
             href: 'https://www.instagram.com/oh_netin/',
             target: '_blank',
+            title: 'Instagram',
             text: 'Instagram',
             class: 'instagram'
         },
@@ -48,14 +53,16 @@ export default function Footer() {
             icon: <FaLinkedin />,
             href: 'https://www.linkedin.com/in/severino-carvalho-019899175/',
             target: '_blank',
-            text: 'Linkedin',
+            title: 'LinkedIn',
+            text: 'LinkedIn',
             class: 'linkedin'
         },
         {
             icon: <FaWhatsapp />,
             href: 'https://wa.me/5584994650540',
             target: '_blank',
-            text: 'Whatsapp',
+            title: 'WhatsApp',
+            text: 'WhatsApp',
             class: 'whatsapp'
         }
     ];
@@ -65,6 +72,7 @@ export default function Footer() {
             icon: <FaGithub />,
             href: 'https://github.com/severino-carvalho',
             target: '_blank',
+            title: 'GitHub',
             text: 'GitHub',
             class: 'github'
         }
@@ -97,7 +105,7 @@ export default function Footer() {
                         <hr />
                         <InfoList title={'Social'} list={social} />
                         <hr />
-                        <InfoList title={'Dev'} list={dev}/>
+                        <InfoList title={'Dev'} list={dev} />
                     </div>
 
                 </div>
