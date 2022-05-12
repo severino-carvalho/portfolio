@@ -3,10 +3,10 @@ import ImageVerified from '../utils/ImageVerified';
 import ImageSeverino from '../../img/Severino.jpg';
 import styles from './Navbar.module.css';
 import Container from './Container';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 export default function Navbar({ props }) {
-    const [selectItem, setSelectItem] = useState('home');
+    //const [selectItem, setSelectItem] = useState('home');
 
     return (
         <nav className={styles.navbar}>
