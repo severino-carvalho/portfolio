@@ -5,3 +5,9 @@
     margin: 0 auto;
     flex-wrap: wrap;
 }
+
+@media (max-width: 650px) { 
+    .container {
+        width: 85%;
+    }
+}
