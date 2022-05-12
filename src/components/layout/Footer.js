@@ -50,12 +50,6 @@ export default function Footer() {
         <footer className={styles.footer}>
             <Container >
                 <div className={styles.content}>
-                    <div className={styles.comunication}>
-                        <hr />
-                        <InfoList title={'Contact'} list={contacts} />
-                        <hr />
-                        <InfoList title={'Social'} list={social} />
-                    </div>
 
                     <div className={styles.perfil}>
                         <div>
@@ -67,6 +61,17 @@ export default function Footer() {
                                 <p>Instituto Metrópole Digital - IMD</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div className={styles.vr}>
+                        <div></div>
+                    </div>
+
+                    <div className={styles.comunication}>
+                        <hr />
+                        <InfoList title={'Contact'} list={contacts} />
+                        <hr />
+                        <InfoList title={'Social'} list={social} />
                     </div>
 
                 </div>

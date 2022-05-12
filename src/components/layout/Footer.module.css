@@ -4,7 +4,6 @@
 
 .footer {
     width: 100%;
-    padding-top: 2.5em;
     background-color: #263238;
     color: #fff;
 
@@ -18,42 +17,22 @@
     -o-border-top-right-radius: .3em;
     -ms-border-top-left-radius: .3em;
     -ms-border-top-right-radius: .3em;
-
-
 }
 
 .footer .content {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1em 0em 2em;
-}
-
-.footer .content .comunication {
-    width: 100%;
-}
-
-.footer .content .comunication>div {
-    margin: 1.5em 0;
-}
-
-.footer .content .comunication hr {
-    display: none;
-    border: 1px solid var(--hr-color);
-    background-color: var(--hr-color);
-    border-radius: 1em;
+    grid-template-columns: 49.8fr 0.4fr 49.8fr;
+    padding: 2.5em 0em;
+    grid-gap: 2em;
 }
 
 .footer .content .perfil {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-}
-
-.footer .content .perfil>div {
-    width: 100%;
 }
 
 .footer .content .perfil>div h2 {
@@ -64,7 +43,22 @@
 
 .footer .content .perfil>div p {
     padding-top: .45em;
-    text-align: justify;
+    text-align: center;
+    opacity: .75;
+}
+
+.footer .content .vr {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .content .vr>div {
+    border: 1px solid var(--hr-color);
+    background-color: var(--hr-color);
+    border-radius: 1em;
+    opacity: .5;
 }
 
 .footer .content .perfil .ImgSeverino {
@@ -83,12 +77,32 @@
     border: 2px solid #ffffff;
 }
 
+.footer .content .comunication {
+    width: 100%;
+}
+
+.footer .content .comunication>div {
+    margin-top: 1.5em;
+}
+
+.footer .content .comunication>div:nth-child(2) {
+    margin-top: 0;
+}
+
+.footer .content .comunication hr {
+    display: none;
+    border: 1px solid var(--hr-color);
+    background-color: var(--hr-color);
+    border-radius: 1em;
+    opacity: .5;
+}
+
 .footer .developed {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3em 0 2em;
+    padding: 2em 0 1.5em;
 
     background-color: #000a12;
     border-top-left-radius: .3em;
@@ -109,7 +123,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 4.5px;
 }
 
 .footer .developed p span {
@@ -121,23 +135,29 @@
 @media (max-width: 650px) {
     .footer .content {
         grid-template-columns: 1fr;
-        padding-bottom: .5em;
+        grid-gap: 0;
     }
 
-    .footer .content .perfil {
+    .footer>.content>.perfil {
         width: 100%;
-        order: -1;
+        border-right: none;
+        padding-right: 0em;
     }
 
-    .footer .content .perfil {
-        padding-bottom: 2em;
+    .footer .content .vr {
+        display: none;
+    }
+
+    .footer>.content>.comunication {
+        padding-left: 0em;
+    }
+
+    .footer .content .comunication>hr {
+        display: block;
+        margin: 1.5em 0;
     }
 
     .footer .developed p {
         padding: 0 3em;
-    }
-
-    .footer .content .comunication hr {
-        display: block;
     }
 }
