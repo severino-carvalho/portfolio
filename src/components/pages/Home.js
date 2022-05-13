@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <article>
-                <section className={styles.grid}>
+                <section className={styles.sectionCI}>
                     <div>
                         <h1>Who am I??</h1>
                         <p>
