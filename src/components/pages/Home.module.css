@@ -11,18 +11,17 @@
     width: 100%;
 }
 
-.main article section.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-gap: 2em;
+.main article section.sectionCI {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.main article section.grid .sectionImage {
+.main article section.sectionCI .sectionImage {
     width: 100%;
-    height: 100%;
+    height: 12em;
     background-image: url('../../img/NFF_3187.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -53,20 +52,61 @@
     transition: all .25s ease-in-out;
 }
 
-@media (max-width<=1024px) {
-    .main article section.grid {
-        grid-template-columns: 6fr 6fr;
+
+/*  Mobile S - 320px    */
+@media (max-width:320px) {
+    .main article section.sectionCI {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main article section.sectionCI .sectionImage {
+        margin-top: 1em;
     }
 }
 
-@media (max-width:1440px) {
-    .main article section.grid {
+/*  Mobile M - 375px    */
+@media (max-width:375px) and (min-width: 321px) {}
+
+/*  Mobile L - 425px    */
+@media (max-width:425px) and (min-width: 376px) {}
+
+/*  Tablet - 768px  */
+@media (max-width:768px) and (min-width: 426px) {}
+
+/*  Laptop - 1024px */
+@media (max-width:1024px) and (min-width: 769px) {
+    .main article section.sectionCI {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+/*  Laptop L - 1440px*/
+@media (min-width: 1024px) {
+    .main article section.sectionCI {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        align-items: center;
+    }
+
+    .main article section.sectionCI .sectionImage {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+    }
+}
+
+@media (max-width:1440px) and (min-width: 1025px) {
+    .main article section.sectionCI {
         grid-template-columns: 8.5fr 3.5fr;
     }
 }
 
+/*  4K - 2560px */
 @media (max-width:2560px) and (min-width: 1441px) {
-    .main article section.grid {
+    .main article section.sectionCI {
         grid-template-columns: 9fr 3fr;
     }
 }
