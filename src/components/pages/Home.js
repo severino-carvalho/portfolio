@@ -39,6 +39,7 @@ export default function Home() {
                     </div>
 
                     <div className={styles.sectionImage}>
+                        
                     </div>
                 </section>
             </article>
