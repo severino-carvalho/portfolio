@@ -43,7 +43,7 @@ export default function Footer() {
         },
         {
             icon: <FaInstagram />,
-            href: 'https://www.instagram.com/oh_netin/',
+            href: 'https://www.instagram.com/seve_neto7/',
             target: '_blank',
             title: 'Instagram',
             text: 'Instagram',
@@ -51,7 +51,7 @@ export default function Footer() {
         },
         {
             icon: <FaLinkedin />,
-            href: 'https://www.linkedin.com/in/severino-carvalho-019899175/',
+            href: 'https://www.linkedin.com/in/dev-severino-carvalho/',
             target: '_blank',
             title: 'LinkedIn',
             text: 'LinkedIn',
@@ -87,9 +87,9 @@ export default function Footer() {
                         <div>
                             <div className={styles.ImgSeverino}>{ /**  Imagem via CSS */}</div >
                             <div>
-                                <h2>Computer Technician</h2>
+                                <h2>Técnico em Informática</h2>
                                 <p>Instituto Federal de Educação Ciência e Tecnologia do Rio Grande do Norte - IFRN</p>
-                                <h2>Internet Programming</h2>
+                                <h2>Pragramação para Internet</h2>
                                 <p>Instituto Metrópole Digital - IMD</p>
                             </div>
                         </div>
