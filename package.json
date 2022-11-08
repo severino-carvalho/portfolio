@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "src/index.js",
+  "repository": "https://github.com/severino-carvalho/portfolio.git",
+  "author": "Severino Carvalho <severinocarvalho14@gmail.com>",
+  "license": "MIT"
 }
