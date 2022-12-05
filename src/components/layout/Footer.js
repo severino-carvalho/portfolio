@@ -11,7 +11,7 @@ export default function Footer() {
             href: 'mailto:severinocarvalho14@gmail.com',
             target: '_blank',
             title: 'Email',
-            text: 'severinocarvalho14@gmail.com',
+            text: 'E-mail',
             class: 'email'
         },
         {
@@ -19,7 +19,7 @@ export default function Footer() {
             href: 'tel:+5584994650540',
             target: '_self',
             title: 'Phone',
-            text: '+55 (84) 99465-0540',
+            text: 'Telefone',
             class: 'phone'
         }
     ];
