@@ -15,7 +15,8 @@ export default function InfoList({ title, list }) {
                 rel={"noreferrer"}
                 title={item.title}
               >
-                <span className="icon_contact">{item.icon}</span> <span>{item.text}</span>
+                <span className="icon_contact">{item.icon}</span>{" "}
+                <span>{item.text}</span>
               </a>
             </li>
           );
