@@ -1,5 +1,6 @@
 .main {
     padding: 2.5em 0em;
+    color: #fff;
 }
 
 .main h1 {
@@ -45,11 +46,11 @@
 .main a {
     font-weight: bolder;
     text-decoration: none;
-    color: #000000;
+    color: #2285c3;
 }
 
 .main a:hover {
-    color: #2286c3;
+    color: #0065c3;
     text-decoration: underline;
     transition: all .25s ease-in-out;
 }
