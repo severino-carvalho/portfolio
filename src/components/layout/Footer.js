@@ -41,7 +41,7 @@ export default function Footer() {
     },
     {
       icon: <MdFacebook />,
-      href: "https://web.facebook.com/Netollyno/",
+      href: "https://www.facebook.com/devseverino/",
       target: "_blank",
       title: "Facebook",
       text: "Facebook",
