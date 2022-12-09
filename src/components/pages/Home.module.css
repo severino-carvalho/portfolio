@@ -1,3 +1,8 @@
+:root {
+    --bgGray: #ffffff10;
+    --coloGray: #ffffff7a;
+}
+
 .main {
     padding: 2.5em 0em;
     color: #fff;
@@ -35,11 +40,11 @@
 .main a {
     font-weight: bolder;
     text-decoration: none;
-    color: #2285c3;
+    color: #ffffffcc;
 }
 
 .main a:hover {
-    color: #0065c3;
+    color: #ffffff;
     text-decoration: underline;
     transition: all .25s ease-in-out;
 }
@@ -77,20 +82,17 @@
     }
 }
 
-.tecnologias {
-    padding-top: 2.5em;
-}
-
-h2 {
-    text-align: center;
-}
 
 .tecnologias>a {
     display: flex;
 
 }
 
-.boxTecnologia {
+h2 {
+    text-align: center;
+}
+
+.boxDefault {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -98,20 +100,20 @@ h2 {
     padding-top: .7em;
 }
 
-.cardTecnologia {
+.cardDefault {
     min-width: 10em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: .3em;
-    background-color: #ffffff10;
-    color: #ffffff7a;
+    background-color: var(--bgGray);
+    color: var(--coloGray);
     padding: 1em;
     flex-wrap: wrap;
 }
 
-.cardTecnologia:hover {
+.cardDefault:hover {
     background-color: #ffffff30;
     color: #ffffff;
     transition: all .25s ease-in-out;
@@ -120,6 +122,30 @@ h2 {
 
 }
 
-.iconTecnologia {
+.cardDefault>img {
+    max-width: 7em;
+}
+
+.iconDefault {
     font-size: 2.5em;
+}
+
+.bgGray {
+    background-color: var(--bgGray);
+}
+
+.colorGray {
+    color: var(--coloGray);
+}
+
+.pt3 {
+    padding-top: 2em;
+}
+
+.about>p {
+    color: #ffffffcc;
+}
+
+.about>h2 {
+    padding-bottom: .5em;
 }

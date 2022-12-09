@@ -6,6 +6,7 @@
 }
 
 .link_contact {
+    min-width: 5em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,10 +16,9 @@
     padding: 1em;
     margin-right: .3em;
 
-    background-color: #26323875;
-    color: #2286c3;
+    background-color: #ffffff10;
+    color: #ffffff7a;
     border-radius: .5em;
-    box-shadow: 2px 2px 5px #212121;
     text-decoration: none;
 }
 
@@ -29,6 +29,7 @@
 
 .link_contact:hover {
     background-color: #212121;
+    color: #ffffff;
     transition: all .25s ease-in-out;
 }
 
