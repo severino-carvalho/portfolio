@@ -1,0 +1,11 @@
+.containerGrid {
+    width: 100%;
+}
+
+.bgDarkContainer {
+    background-color: #212121;
+}
+
+.bgLigthContainer {
+    background-color: #fff;
+}
