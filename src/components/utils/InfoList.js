@@ -7,7 +7,7 @@ export default function InfoList({ title, list }) {
       <ul className={styles.list_contact}>
         {list.map((item, index) => {
           return (
-            <li key={index} className={styles.card_contact}>
+            <li key={index}>
               <a
                 className={styles.link_contact}
                 href={item.href}
