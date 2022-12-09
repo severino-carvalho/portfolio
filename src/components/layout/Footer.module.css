@@ -6,17 +6,6 @@
     width: 100%;
     background-color: #263238;
     color: #fff;
-
-    border-top-left-radius: .3em;
-    border-top-right-radius: .3em;
-    -webkit-border-top-left-radius: .3em;
-    -webkit-border-top-right-radius: .3em;
-    -moz-border-top-left-radius: .3em;
-    -moz-border-top-right-radius: .3em;
-    -o-border-top-left-radius: .3em;
-    -o-border-top-right-radius: .3em;
-    -ms-border-top-left-radius: .3em;
-    -ms-border-top-right-radius: .3em;
 }
 
 .footer .content {
@@ -160,4 +149,8 @@
     .footer .developed p {
         padding: 0 3em;
     }
+}
+
+.bgContainerFooter {
+    background-color: #263238;
 }

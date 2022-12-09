@@ -86,7 +86,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <Container>
+      <Container styles={styles.bgContainerFooter}>
         <div className={styles.content}>
           <div className={styles.perfil}>
             <div>

@@ -3,6 +3,10 @@
     color: #fff;
 }
 
+.bgDark {
+    background-color: #212121;
+}
+
 .main h1 {
     font-size: 32px;
     padding-bottom: .5em;
