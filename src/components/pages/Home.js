@@ -30,7 +30,7 @@ export default function Home() {
               <h2>Sobre mim</h2>
               <p>
                 Olá, sou Severino Carvalho e tenho 20 anos. Sou técnico de nível
-                médio em informátiva pelo Instituto Federal de Educação Ciência
+                médio em informática pelo Instituto Federal de Educação Ciência
                 e Tecnologia do Rio Grande do Norte <i> Campus </i> João Câmara{" "}
                 <a
                   href="https://portal.ifrn.edu.br/campus/joaocamara"
@@ -38,18 +38,20 @@ export default function Home() {
                   rel={"noreferrer"}
                 >
                   (IFRN-JC)
-                </a>{" "}
-                e técnico em programação para internet pelo Instituto Metrópole
-                Digital da Universidade Federal do Rio Grande do Norte.{" "}
+                </a>
+                {", "}
+                técnico em programação para internet pelo Instituto Metrópole
+                Digital da Universidade Federal do Rio Grande do Norte
                 <a
                   href="https://www.metropoledigital.ufrn.br/portal/ensino/tecnico"
                   target={"_blank"}
                   rel={"noreferrer"}
                 >
-                  (IMD/UFRN).
+                  (IMD/UFRN)
                 </a>{" "}
-                No ensino superior, estou cursando o primeiro semestre na Escola
-                de Ciências e Tecnologia{" "}
+                e no ensino superior, estou cursando o primeiro semestre no
+                bacharelado em Ciências e Tecnologia na Escola de Ciências e
+                Tecnologia{" "}
                 <a
                   href="https://www.ect.ufrn.br/"
                   target={"_blank"}
@@ -74,7 +76,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.tecnologias + ' ' + styles.pt3}>
+          <section className={styles.tecnologias + " " + styles.pt3}>
             <h2>Habilidades</h2>
 
             <div className={styles.boxDefault}>
