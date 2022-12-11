@@ -1,6 +1,6 @@
 import styles from "./ContactList.module.css";
 
-export default function InfoList({ title, list }) {
+export default function ContactList({ title, list }) {
   return (
     <div className={styles.infoList}>
       <h3>{title}</h3>

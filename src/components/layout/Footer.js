@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import Container from "./Container";
 import styles from "./Footer.module.css";
-import InfoList from "../utils/InfoList";
+import ContactList from "../utils/ContactList";
 
 export default function Footer() {
   const contacts = [
@@ -109,11 +109,11 @@ export default function Footer() {
 
           <div className={styles.comunication}>
             <hr />
-            <InfoList title={"Contact"} list={contacts} />
+            <ContactList title={"Contact"} list={contacts} />
             <hr />
-            <InfoList title={"Social"} list={social} />
+            <ContactList title={"Social"} list={social} />
             <hr />
-            <InfoList title={"Dev"} list={dev} />
+            <ContactList title={"Dev"} list={dev} />
           </div>
         </div>
       </Container>
