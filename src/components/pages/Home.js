@@ -41,7 +41,7 @@ export default function Home() {
                 </a>
                 {", "}
                 técnico em programação para internet pelo Instituto Metrópole
-                Digital da Universidade Federal do Rio Grande do Norte
+                Digital da Universidade Federal do Rio Grande do Norte{" "}
                 <a
                   href="https://www.metropoledigital.ufrn.br/portal/ensino/tecnico"
                   target={"_blank"}
