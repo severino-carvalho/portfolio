@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8794499e.css",
-    "main.js": "/portfolio/static/js/main.e42e961b.js",
+    "main.js": "/portfolio/static/js/main.2f4d8e9c.js",
     "static/media/610_6670.jpg": "/portfolio/static/media/610_6670.05e97ee8f0883d791f4c.jpg",
     "static/media/logoifsol.png": "/portfolio/static/media/logoifsol.b6f4e7d8b15d0cc6c9c7.png",
     "index.html": "/portfolio/index.html",
     "main.8794499e.css.map": "/portfolio/static/css/main.8794499e.css.map",
-    "main.e42e961b.js.map": "/portfolio/static/js/main.e42e961b.js.map"
+    "main.2f4d8e9c.js.map": "/portfolio/static/js/main.2f4d8e9c.js.map"
   },
   "entrypoints": [
     "static/css/main.8794499e.css",
-    "static/js/main.e42e961b.js"
+    "static/js/main.2f4d8e9c.js"
   ]
 }
