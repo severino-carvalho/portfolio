@@ -40,5 +40,8 @@
   "main": "src/index.js",
   "repository": "https://github.com/severino-carvalho/portfolio.git",
   "author": "Severino Carvalho <severinocarvalho14@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
