@@ -1,0 +1,38 @@
+.list_contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.link_contact {
+    min-width: 5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em;
+    margin-right: .3em;
+
+    background-color: #ffffff10;
+    color: #ffffff7a;
+    border-radius: .5em;
+    text-decoration: none;
+}
+
+
+.link_contact:nth-child(n+1) {
+    margin-top: 1em;
+}
+
+.link_contact:hover {
+    background-color: #212121;
+    color: #ffffff;
+    transition: all .25s ease-in-out;
+}
+
+.link_contact svg {
+    font-size: 2em;
+}

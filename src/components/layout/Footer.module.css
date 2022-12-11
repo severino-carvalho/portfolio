@@ -1,11 +1,13 @@
 :root {
     --hr-color: #6d6d6d;
+    --bg-dark: #263238;
+    --color-ligth: #ffffff;
 }
 
 .footer {
     width: 100%;
-    background-color: #263238;
-    color: #fff;
+    background-color: var(--bg-dark);
+    color: var(--color-ligth);
 }
 
 .footer .content {
@@ -63,7 +65,7 @@
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--color-ligth);
 }
 
 .footer .content .comunication {
@@ -152,5 +154,5 @@
 }
 
 .bgContainerFooter {
-    background-color: #263238;
+    background-color: var(--bg-dark);
 }
