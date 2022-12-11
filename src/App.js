@@ -6,7 +6,7 @@ import Home from "./components/pages/Home";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ContainerGrid styles={"bgDarkContainer"}>
         {/**  Routes Config */}
         <Routes>
