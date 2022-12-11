@@ -76,7 +76,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.tecnologias + " " + styles.pt3}>
+          <section className={styles.habilidades + " " + styles.pt3}>
             <h2>Habilidades</h2>
 
             <div className={styles.boxDefault}>
