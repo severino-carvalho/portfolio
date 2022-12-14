@@ -1,20 +1,23 @@
 import Container from "../layout/Container";
 import styles from "./Home.module.css";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJava,
-  FaJs,
-  FaReact,
-  FaGit,
-  FaGithub,
-  FaNodeJs,
-  FaBootstrap,
-  FaYarn,
-  FaNpm,
-} from "react-icons/fa";
 
-import { SiMysql, SiSpring, SiJquery } from "react-icons/si";
+import {
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiGit,
+  SiGithub,
+  SiBootstrap,
+  SiYarn,
+  SiNpm,
+  SiMysql,
+  SiSpring,
+  SiJquery,
+  SiTypescript,
+  SiJavascript,
+  SiJava,
+  SiNodedotjs,
+} from "react-icons/si";
 
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -82,31 +85,37 @@ export default function Home() {
             <div className={styles.boxDefault}>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaHtml5 />
+                  <SiHtml5 />
                 </span>
                 <span>Html 5</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaCss3 />
+                  <SiCss3 />
                 </span>
                 <span>Css 3</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaJs />
+                  <SiJavascript />
                 </span>
                 <span>Javascript</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaNodeJs />
+                  <SiTypescript />
+                </span>
+                <span>Typescript</span>
+              </div>
+              <div className={styles.cardDefault}>
+                <span className={styles.iconDefault}>
+                  <SiNodedotjs />
                 </span>
                 <span>NodeJS</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaJava />
+                  <SiJava />
                 </span>
                 <span>Java</span>
               </div>
@@ -124,7 +133,7 @@ export default function Home() {
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaReact />
+                  <SiReact />
                 </span>
                 <span>React</span>
               </div>
@@ -136,31 +145,31 @@ export default function Home() {
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaGit />
+                  <SiGit />
                 </span>
                 <span>Git</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaGithub />
+                  <SiGithub />
                 </span>
                 <span>Github</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaBootstrap />
+                  <SiBootstrap />
                 </span>
                 <span>Bootstrap</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaYarn />
+                  <SiYarn />
                 </span>
                 <span>Yarn</span>
               </div>
               <div className={styles.cardDefault}>
                 <span className={styles.iconDefault}>
-                  <FaNpm />
+                  <SiNpm />
                 </span>
                 <span>NPM</span>
               </div>
