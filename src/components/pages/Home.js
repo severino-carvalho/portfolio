@@ -32,7 +32,7 @@ export default function Home() {
             <div className={styles.about}>
               <h2>Sobre mim</h2>
               <p>
-                Olá, sou Severino Carvalho e tenho 20 anos. Sou técnico de nível
+                Olá, sou Severino Carvalho e tenho 21 anos. Sou técnico de nível
                 médio em informática pelo Instituto Federal de Educação Ciência
                 e Tecnologia do Rio Grande do Norte <i> Campus </i> João Câmara{" "}
                 <a
