@@ -125,13 +125,12 @@ h2 {
     -moz-transition: var(--time-delay-link-project) ease-out;
     -o-transition: var(--time-delay-link-project) ease-out;
     transition: var(--time-delay-link-project) ease-out;
-    cursor: help;
     background-color: var(--bgGray);
-    @apply flex flex-col flex-wrap justify-center shadow-lg rounded-md py-3 pt-4 text-center text-neutral-400 bg-zinc-800;
+    @apply flex flex-col flex-wrap justify-center rounded-md py-2 pt-4 text-center text-neutral-400 bg-zinc-800;
 }
 
 .skill-title {
-    @apply pt-2 text-sm
+    @apply pt-3 text-sm
 }
 
 .skill-icon {
@@ -139,7 +138,7 @@ h2 {
 }
 
 .skill-item:hover {
-    @apply bg-zinc-700 text-gray-100
+    @apply bg-zinc-700 text-gray-100 shadow-lg shadow-stone-900
 }
 
 

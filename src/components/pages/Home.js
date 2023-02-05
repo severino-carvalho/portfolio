@@ -136,7 +136,9 @@ export default function Home() {
                 <span className={styles["skill-icon"] + " " + styles["spring"]}>
                   <SiSpring />
                 </span>
-                <span className={styles["skill-title"] + " " + styles["spring"]}>
+                <span
+                  className={styles["skill-title"] + " " + styles["spring"]}
+                >
                   Spring
                 </span>
               </div>
@@ -157,10 +159,18 @@ export default function Home() {
                 </span>
               </div>
               <div className={styles["skill-item"]}>
-                <span className={styles["skill-icon"] + " " + styles["react-native"]}>
+                <span
+                  className={
+                    styles["skill-icon"] + " " + styles["react-native"]
+                  }
+                >
                   <TbBrandReactNative />
                 </span>
-                <span className={styles["skill-title"] + " " + styles["react-native"]}>
+                <span
+                  className={
+                    styles["skill-title"] + " " + styles["react-native"]
+                  }
+                >
                   React Native
                 </span>
               </div>
@@ -176,15 +186,21 @@ export default function Home() {
                 <span className={styles["skill-icon"] + " " + styles["github"]}>
                   <SiGithub />
                 </span>
-                <span className={styles["skill-title"] + " " + styles["github"]}>
+                <span
+                  className={styles["skill-title"] + " " + styles["github"]}
+                >
                   Github
                 </span>
               </div>
               <div className={styles["skill-item"]}>
-                <span className={styles["skill-icon"] + " " + styles["bootstrap"]}>
+                <span
+                  className={styles["skill-icon"] + " " + styles["bootstrap"]}
+                >
                   <SiBootstrap />
                 </span>
-                <span className={styles["skill-title"] + " " + styles["bootstrap"]}>
+                <span
+                  className={styles["skill-title"] + " " + styles["bootstrap"]}
+                >
                   Bootstrap
                 </span>
               </div>
@@ -192,7 +208,9 @@ export default function Home() {
                 <span className={styles["skill-icon"] + " " + styles["jquery"]}>
                   <SiJquery />
                 </span>
-                <span className={styles["skill-title"] + " " + styles["jquery"]}>
+                <span
+                  className={styles["skill-title"] + " " + styles["jquery"]}
+                >
                   Jquery
                 </span>
               </div>
