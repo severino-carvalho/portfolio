@@ -248,7 +248,7 @@ h2 {
     -moz-transition: var(--time-delay-link-project) ease-out;
     -o-transition: var(--time-delay-link-project) ease-out;
     transition: var(--time-delay-link-project) ease-out;
-    @apply w-full p-4 px-5 decoration-transparent rounded-md shadow-sm bg-zinc-900 text-gray-300
+    @apply inline-block box-content w-24 p-2 my-2 text-center decoration-transparent rounded-lg shadow-sm bg-violet-900 text-gray-300
 }
 
 .link-project:hover {
@@ -256,7 +256,7 @@ h2 {
     -moz-transition: var(--time-delay-link-project) ease-in;
     -o-transition: var(--time-delay-link-project) ease-in;
     transition: var(--time-delay-link-project) ease-in;
-    @apply bg-indigo-700 text-white font-extrabold
+    @apply bg-violet-800 text-white font-extrabold
 }
 
 .link-project .title-project {
@@ -273,4 +273,12 @@ h2 {
     -o-transition: var(--time-delay-link-project) ease-in;
     transition: var(--time-delay-link-project) ease-in;
     @apply text-gray-100 font-bold
+}
+
+.card-project {
+    @apply max-w-sm rounded-lg overflow-hidden shadow-lg bg-zinc-900 shadow-stone-900
+}
+
+.tag-project {
+    @apply inline-block bg-zinc-800 shadow-lg rounded-full px-3 py-1 text-sm font-semibold text-gray-400 mr-2 mb-2
 }

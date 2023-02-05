@@ -80,7 +80,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.habilidades + " " + styles.pt3}>
+          <section className={styles.habilidades + " pt-12"}>
             <h2 className="text-2xl text-center">Habilidades</h2>
 
             <div className="grid grid-cols-8 gap-4 pt-4">
@@ -236,49 +236,55 @@ export default function Home() {
           <section className={styles.projects + " pt-12"}>
             <h2 className="text-2xl text-center">Projetos</h2>
 
-            <div className="flex flex-row flex-wrap gap-4 justify-center">
-              <div
-                className={
-                  styles.bgGray +
-                  " w-3/12 text-center rounded-md shadow-2xl flex flex-col justify-center self-center"
-                }
-              >
-                <a
-                  className={styles["link-project"]}
-                  href="https://github.com/severino-carvalho/site_ifsol"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <div className="">
-                    <h2 className={styles["title-project"]}>Site IFSol</h2>
-                    <p className={styles["text-project"]}>
-                      Projeto em equipe que serviu como TCC do curso técnico em
-                      informática.
-                    </p>
+            <div className="flex flex-row flex-wrap gap-5 justify-center pt-4">
+              <div className={styles["card-project"]}>
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">Site IFSol</div>
+                  <p className="text-gray-300 text-base">
+                    Projeto em equipe que serviu como TCC do curso técnico em
+                    informática.
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2">
+                  <span className={styles["tag-project"]}>#Java</span>
+                  <span className={styles["tag-project"]}>#Spring</span>
+                  <span className={styles["tag-project"]}>#MySQL</span>
+                  <div>
+                    <a
+                      className={styles["link-project"]}
+                      href="https://github.com/severino-carvalho/site_ifsol"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Acessar
+                    </a>
                   </div>
-                </a>
+                </div>
               </div>
 
-              <div
-                className={
-                  styles.bgGray +
-                  " w-3/12 text-center rounded-md shadow-2xl flex flex-col justify-center self-center"
-                }
-              >
-                <a
-                  className={styles["link-project"]}
-                  href="https://github.com/severino-carvalho/site_ifsol"
-                  target={"_blank"}
-                  rel="noreferrer"
-                >
-                  <div className="">
-                    <h2 className={styles["title-project"]}>Portfólio</h2>
-                    <p className={styles["text-project"]}>
-                      Projeto pessoal desenvolvido para mostrar minhas
-                      habilidades como desenvolvedor full-stack.
-                    </p>
+              <div className={styles["card-project"]}>
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2">Portfólio</div>
+                  <p className="text-gray-300 text-base">
+                    Projeto pessoal desenvolvido para mostrar minhas habilidades
+                    como desenvolvedor full-stack.
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2">
+                  <span className={styles["tag-project"]}>#React</span>
+                  <span className={styles["tag-project"]}>#Javascript</span>
+                  <span className={styles["tag-project"]}>#Tailwind</span>
+                  <div>
+                    <a
+                      className={styles["link-project"]}
+                      href="https://github.com/severino-carvalho/portfolio"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >
+                      Acessar
+                    </a>
                   </div>
-                </a>
+                </div>
               </div>
             </div>
           </section>
