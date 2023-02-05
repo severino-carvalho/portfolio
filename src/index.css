@@ -1,17 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-cyan: #00838f;
   --light-cyan: #4fb3bf;
   --dark-cyan: #005662;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Comfortaa', cursive;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
