@@ -21,8 +21,6 @@ import {
 
 import { TbBrandReactNative } from "react-icons/tb";
 
-import LogoIFSol from "../../img/logoifsol.png";
-
 export default function Home() {
   return (
     <Container styles={"bgDarkContainer"}>
@@ -30,12 +28,13 @@ export default function Home() {
         <article>
           <section className={styles.sectionCI}>
             <div className={styles.about}>
-              <h2>Sobre mim</h2>
+              <h2 className="text-2xl text-center">Sobre mim</h2>
               <p>
                 Olá, sou Severino Carvalho e tenho 21 anos. Sou técnico de nível
                 médio em informática pelo Instituto Federal de Educação Ciência
                 e Tecnologia do Rio Grande do Norte <i> Campus </i> João Câmara{" "}
                 <a
+                  className="hover:no-underline hover:decoration-blue-400 hover:text-blue-500"
                   href="https://portal.ifrn.edu.br/campus/joaocamara"
                   target={"_blank"}
                   rel={"noreferrer"}
@@ -46,6 +45,7 @@ export default function Home() {
                 técnico em programação para internet pelo Instituto Metrópole
                 Digital da Universidade Federal do Rio Grande do Norte{" "}
                 <a
+                  className="hover:no-underline hover:decoration-blue-400 hover:text-blue-500"
                   href="https://www.metropoledigital.ufrn.br/portal/ensino/tecnico"
                   target={"_blank"}
                   rel={"noreferrer"}
@@ -56,6 +56,7 @@ export default function Home() {
                 bacharelado em Ciências e Tecnologia na Escola de Ciências e
                 Tecnologia{" "}
                 <a
+                  className="hover:no-underline hover:decoration-blue-400 hover:text-blue-500"
                   href="https://www.ect.ufrn.br/"
                   target={"_blank"}
                   rel={"noreferrer"}
@@ -68,8 +69,8 @@ export default function Home() {
                 Com o conhecimento adquirido, consigo desenvolver atividades
                 front-end utilizando HTML, CSS, Javascript, Bootstrap e ReactJS.
                 Para o back-end desenvolvo utilizando Java com o framework
-                Spring, NodeJS com o framework ExpressJS e MySQL como banco de
-                dados. Na área do desenvolvimento para dispositivos móveis
+                Spring, NodeJS com o framework ExpressJS, Typescript, MySQL e
+                PostgreSQL. Na área do desenvolvimento para dispositivos móveis
                 desenvolvo aplicações utilizando React Native. E para o
                 versionamento de projetos utilizo Git e GitHub. Sou uma pessoa
                 autodidata, apaixonado pela programação, vejo o trabalho em
@@ -80,115 +81,186 @@ export default function Home() {
           </section>
 
           <section className={styles.habilidades + " " + styles.pt3}>
-            <h2>Habilidades</h2>
+            <h2 className="text-2xl text-center">Habilidades</h2>
 
-            <div className={styles.boxDefault}>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+            <div className="grid grid-cols-8 gap-4 pt-4">
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["html"]}>
                   <SiHtml5 />
                 </span>
-                <span>Html 5</span>
+                <span className={styles["skill-title"] + " " + styles["html"]}>
+                  Html 5
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["css"]}>
                   <SiCss3 />
                 </span>
-                <span>Css 3</span>
+                <span className={styles["skill-title"] + " " + styles["css"]}>
+                  Css 3
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["js"]}>
                   <SiJavascript />
                 </span>
-                <span>Javascript</span>
+                <span className={styles["skill-title"] + " " + styles["js"]}>
+                  Javascript
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["ts"]}>
                   <SiTypescript />
                 </span>
-                <span>Typescript</span>
+                <span className={styles["skill-title"] + " " + styles["ts"]}>
+                  Typescript
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["node"]}>
                   <SiNodedotjs />
                 </span>
-                <span>NodeJS</span>
+                <span className={styles["skill-title"] + " " + styles["node"]}>
+                  NodeJS
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["java"]}>
                   <SiJava />
                 </span>
-                <span>Java</span>
+                <span className={styles["skill-title"] + " " + styles["java"]}>
+                  Java
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["spring"]}>
                   <SiSpring />
                 </span>
-                <span>Spring</span>
+                <span className={styles["skill-title"] + " " + styles["spring"]}>
+                  Spring
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["mysql"]}>
                   <SiMysql />
                 </span>
-                <span>MySQL</span>
+                <span className={styles["skill-title"] + " " + styles["mysql"]}>
+                  MySQL
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["react"]}>
                   <SiReact />
                 </span>
-                <span>React</span>
+                <span className={styles["skill-title"] + " " + styles["react"]}>
+                  React
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["react-native"]}>
                   <TbBrandReactNative />
                 </span>
-                <span>React Native</span>
+                <span className={styles["skill-title"] + " " + styles["react-native"]}>
+                  React Native
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["git"]}>
                   <SiGit />
                 </span>
-                <span>Git</span>
+                <span className={styles["skill-title"] + " " + styles["git"]}>
+                  Git
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["github"]}>
                   <SiGithub />
                 </span>
-                <span>Github</span>
+                <span className={styles["skill-title"] + " " + styles["github"]}>
+                  Github
+                </span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["bootstrap"]}>
                   <SiBootstrap />
                 </span>
-                <span>Bootstrap</span>
-              </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
-                  <SiYarn />
+                <span className={styles["skill-title"] + " " + styles["bootstrap"]}>
+                  Bootstrap
                 </span>
-                <span>Yarn</span>
               </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
-                  <SiNpm />
-                </span>
-                <span>NPM</span>
-              </div>
-              <div className={styles.cardDefault}>
-                <span className={styles.iconDefault}>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["jquery"]}>
                   <SiJquery />
                 </span>
-                <span>Jquery</span>
+                <span className={styles["skill-title"] + " " + styles["jquery"]}>
+                  Jquery
+                </span>
+              </div>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["yarn"]}>
+                  <SiYarn />
+                </span>
+                <span className={styles["skill-title"] + " " + styles["yarn"]}>
+                  Yarn
+                </span>
+              </div>
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["npm"]}>
+                  <SiNpm />
+                </span>
+                <span className={styles["skill-title"] + " " + styles["npm"]}>
+                  NPM
+                </span>
               </div>
             </div>
           </section>
 
-          <section className={styles.projects + " " + styles.pt3}>
-            <h2>Projetos</h2>
+          <section className={styles.projects + " pt-12"}>
+            <h2 className="text-2xl text-center">Projetos</h2>
 
-            <div className={styles.boxDefault}>
-              <div className={styles.cardDefault}>
-                <img src={LogoIFSol} alt="logo_ifsol" />
-                <span>Site IFSol</span>
+            <div className="flex flex-row flex-wrap gap-4 justify-center">
+              <div
+                className={
+                  styles.bgGray +
+                  " w-3/12 text-center rounded-md shadow-2xl flex flex-col justify-center self-center"
+                }
+              >
+                <a
+                  className={styles["link-project"]}
+                  href="https://github.com/severino-carvalho/site_ifsol"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <div className="">
+                    <h2 className={styles["title-project"]}>Site IFSol</h2>
+                    <p className={styles["text-project"]}>
+                      Projeto em equipe que serviu como TCC do curso técnico em
+                      informática.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div
+                className={
+                  styles.bgGray +
+                  " w-3/12 text-center rounded-md shadow-2xl flex flex-col justify-center self-center"
+                }
+              >
+                <a
+                  className={styles["link-project"]}
+                  href="https://github.com/severino-carvalho/site_ifsol"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <div className="">
+                    <h2 className={styles["title-project"]}>Portfólio</h2>
+                    <p className={styles["text-project"]}>
+                      Projeto pessoal desenvolvido para mostrar minhas
+                      habilidades como desenvolvedor full-stack.
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </section>

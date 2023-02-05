@@ -1,15 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --bgGray: #ffffff10;
+    --bgDark: #212121;
+    --bgGray-20: #ffffff05;
     --coloGray: #ffffff7a;
+
+    --white: #ffffff;
+    --time-delay-link-project: .3s;
 }
 
 .main {
     padding: 2.5em 0em;
-    color: #fff;
+    color: var(--white);
 }
 
 .bgDark {
-    background-color: #212121;
+    background-color: var(--bgDark);
 }
 
 .main h1 {
@@ -37,17 +46,7 @@
     padding-bottom: 0;
 }
 
-.main a {
-    font-weight: bolder;
-    text-decoration: none;
-    color: #ffffffcc;
-}
 
-.main a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-    transition: all .25s ease-in-out;
-}
 
 
 /*  Mobile S - 320px    */
@@ -56,28 +55,10 @@
         display: flex;
         flex-wrap: wrap;
     }
-
-    .cardDefault {
-        min-width: 7em !important;
-    }
-
-    .cardDefault>img {
-        max-width: 4em;
-    }
-
-
 }
 
 /*  Mobile M - 375px    */
-@media (max-width:375px) and (min-width: 321px) {
-    .cardDefault {
-        min-width: 8em !important;
-    }
-
-    .cardDefault>img {
-        max-width: 4em;
-    }
-}
+@media (max-width:375px) and (min-width: 321px) {}
 
 /*  Mobile L - 425px    */
 @media (max-width:425px) and (min-width: 376px) {}
@@ -99,49 +80,14 @@
 
 .habilidades>a {
     display: flex;
-
 }
 
 h2 {
     text-align: center;
 }
 
-.boxDefault {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: .5em;
-    padding-top: .7em;
-}
-
-.cardDefault {
-    min-width: 9em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: .3em;
-    background-color: var(--bgGray);
-    color: var(--coloGray);
-    padding: 1em;
-    flex-wrap: wrap;
-}
-
-.cardDefault:hover {
-    background-color: #ffffff30;
-    color: #ffffff;
-    transition: all .25s ease-in-out;
-    cursor: pointer;
-
-
-}
-
-.cardDefault>img {
-    max-width: 7em;
-}
-
-.iconDefault {
-    font-size: 2.5em;
+.bgGray {
+    background-color: var(--bgGray-20);
 }
 
 .bgGray {
@@ -162,4 +108,170 @@ h2 {
 
 .about>h2 {
     padding-bottom: .5em;
+}
+
+.about a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #ffffffcc;
+}
+
+.about a:hover {
+    transition: all .35s ease-in !important;
+}
+
+.skill-item {
+    -webkit-transition: var(--time-delay-link-project) ease-out;
+    -moz-transition: var(--time-delay-link-project) ease-out;
+    -o-transition: var(--time-delay-link-project) ease-out;
+    transition: var(--time-delay-link-project) ease-out;
+    cursor: help;
+    background-color: var(--bgGray);
+    @apply flex flex-col flex-wrap justify-center shadow-lg rounded-md py-3 pt-4 text-center text-neutral-400 bg-zinc-800;
+}
+
+.skill-title {
+    @apply pt-2 text-sm
+}
+
+.skill-icon {
+    @apply flex justify-center text-5xl
+}
+
+.skill-item:hover {
+    @apply bg-zinc-700 text-gray-100
+}
+
+
+.skill-item:hover .skill-icon,
+.skill-item:hover .skill-title {
+    -webkit-transition: var(--time-delay-link-project) ease-out;
+    -moz-transition: var(--time-delay-link-project) ease-out;
+    -o-transition: var(--time-delay-link-project) ease-out;
+    transition: var(--time-delay-link-project) ease-out;
+    @apply font-bold;
+}
+
+.skill-item:hover .skill-icon.html,
+.skill-item:hover .skill-title.html {
+    @apply text-orange-600;
+}
+
+.skill-item:hover .skill-icon.css,
+.skill-item:hover .skill-title.css {
+    @apply text-blue-500;
+}
+
+.skill-item:hover .skill-icon.js,
+.skill-item:hover .skill-title.js {
+    @apply text-yellow-500;
+}
+
+.skill-item:hover .skill-icon.ts,
+.skill-item:hover .skill-title.ts {
+    @apply text-blue-600;
+}
+
+.skill-item:hover .skill-icon.node,
+.skill-item:hover .skill-title.node {
+    @apply text-green-600;
+}
+
+.skill-item:hover .skill-icon.java,
+.skill-item:hover .skill-title.java {
+    @apply text-red-500;
+}
+
+.skill-item:hover .skill-icon.spring,
+.skill-item:hover .skill-title.spring {
+    @apply text-green-500;
+}
+
+.skill-item:hover .skill-icon.mysql,
+.skill-item:hover .skill-title.mysql {
+    @apply text-blue-500;
+}
+
+.skill-item:hover .skill-icon.react,
+.skill-item:hover .skill-title.react {
+    @apply text-blue-400;
+}
+
+.skill-item:hover .skill-icon.react-native,
+.skill-item:hover .skill-title.react-native {
+    @apply text-green-400;
+}
+
+.skill-item:hover .skill-icon.git,
+.skill-item:hover .skill-title.git {
+    @apply text-orange-600;
+}
+
+.skill-item:hover .skill-icon.github,
+.skill-item:hover .skill-title.github {
+    @apply text-white;
+}
+
+.skill-item:hover .skill-icon.bootstrap,
+.skill-item:hover .skill-title.bootstrap {
+    @apply text-violet-500;
+}
+
+.skill-item:hover .skill-icon.jquery,
+.skill-item:hover .skill-title.jquery {
+    @apply text-blue-500;
+}
+
+.skill-item:hover .skill-icon.yarn,
+.skill-item:hover .skill-title.yarn {
+    @apply text-blue-500;
+}
+
+.skill-item:hover .skill-icon.npm,
+.skill-item:hover .skill-title.npm {
+    @apply text-red-500;
+}
+
+
+
+.skill-item:hover .skill-title {
+    @apply text-white
+}
+
+.skill-item:hover .html {
+    @apply text-red-500;
+}
+
+
+
+.link-project {
+    -webkit-transition: var(--time-delay-link-project) ease-out;
+    -moz-transition: var(--time-delay-link-project) ease-out;
+    -o-transition: var(--time-delay-link-project) ease-out;
+    transition: var(--time-delay-link-project) ease-out;
+    @apply w-full p-4 px-5 decoration-transparent rounded-md shadow-sm bg-zinc-900 text-gray-300
+}
+
+.link-project:hover {
+    -webkit-transition: var(--time-delay-link-project) ease-in;
+    -moz-transition: var(--time-delay-link-project) ease-in;
+    -o-transition: var(--time-delay-link-project) ease-in;
+    transition: var(--time-delay-link-project) ease-in;
+    @apply bg-indigo-700 text-white font-extrabold
+}
+
+.link-project .title-project {
+    @apply text-lg font-bold
+}
+
+.link-project .text-project {
+    @apply text-gray-400 text-xs font-bold text-justify pt-2
+}
+
+.link-project:hover .text-project {
+    -webkit-transition: var(--time-delay-link-project) ease-in;
+    -moz-transition: var(--time-delay-link-project) ease-in;
+    -o-transition: var(--time-delay-link-project) ease-in;
+    transition: var(--time-delay-link-project) ease-in;
+    @apply text-gray-100 font-bold
 }
