@@ -9,7 +9,7 @@
     --coloGray: #ffffff7a;
 
     --white: #ffffff;
-    --time-delay-link-project: .3s;
+    --time-delay-300: .3s;
 }
 
 .main {
@@ -121,12 +121,12 @@ h2 {
 }
 
 .skill-item {
-    -webkit-transition: var(--time-delay-link-project) ease-out;
-    -moz-transition: var(--time-delay-link-project) ease-out;
-    -o-transition: var(--time-delay-link-project) ease-out;
-    transition: var(--time-delay-link-project) ease-out;
+    -webkit-transition: var(--time-delay-300) ease-out;
+    -moz-transition: var(--time-delay-300) ease-out;
+    -o-transition: var(--time-delay-300) ease-out;
+    transition: var(--time-delay-300) ease-out;
     background-color: var(--bgGray);
-    @apply flex flex-col flex-wrap justify-center rounded-md py-2 pt-4 text-center text-neutral-400 bg-zinc-800;
+    @apply flex flex-col flex-wrap justify-center rounded-md shadow-md py-2 pt-4 text-center text-neutral-400 bg-zinc-800;
 }
 
 .skill-title {
@@ -144,10 +144,10 @@ h2 {
 
 .skill-item:hover .skill-icon,
 .skill-item:hover .skill-title {
-    -webkit-transition: var(--time-delay-link-project) ease-out;
-    -moz-transition: var(--time-delay-link-project) ease-out;
-    -o-transition: var(--time-delay-link-project) ease-out;
-    transition: var(--time-delay-link-project) ease-out;
+    -webkit-transition: var(--time-delay-300) ease-out;
+    -moz-transition: var(--time-delay-300) ease-out;
+    -o-transition: var(--time-delay-300) ease-out;
+    transition: var(--time-delay-300) ease-out;
     @apply font-bold;
 }
 
@@ -244,18 +244,18 @@ h2 {
 
 
 .link-project {
-    -webkit-transition: var(--time-delay-link-project) ease-out;
-    -moz-transition: var(--time-delay-link-project) ease-out;
-    -o-transition: var(--time-delay-link-project) ease-out;
-    transition: var(--time-delay-link-project) ease-out;
-    @apply inline-block box-content w-24 p-2 my-2 text-center decoration-transparent rounded-lg shadow-sm bg-violet-900 text-gray-300
+    -webkit-transition: var(--time-delay-300) ease-out;
+    -moz-transition: var(--time-delay-300) ease-out;
+    -o-transition: var(--time-delay-300) ease-out;
+    transition: var(--time-delay-300) ease-out;
+    @apply inline-block box-content w-24 p-2 my-2 text-center decoration-transparent rounded-lg shadow-sm bg-violet-900 text-slate-300 font-extrabold
 }
 
 .link-project:hover {
-    -webkit-transition: var(--time-delay-link-project) ease-in;
-    -moz-transition: var(--time-delay-link-project) ease-in;
-    -o-transition: var(--time-delay-link-project) ease-in;
-    transition: var(--time-delay-link-project) ease-in;
+    -webkit-transition: var(--time-delay-300) ease-in;
+    -moz-transition: var(--time-delay-300) ease-in;
+    -o-transition: var(--time-delay-300) ease-in;
+    transition: var(--time-delay-300) ease-in;
     @apply bg-violet-800 text-white font-extrabold
 }
 
@@ -268,15 +268,28 @@ h2 {
 }
 
 .link-project:hover .text-project {
-    -webkit-transition: var(--time-delay-link-project) ease-in;
-    -moz-transition: var(--time-delay-link-project) ease-in;
-    -o-transition: var(--time-delay-link-project) ease-in;
-    transition: var(--time-delay-link-project) ease-in;
+    -webkit-transition: var(--time-delay-300) ease-in;
+    -moz-transition: var(--time-delay-300) ease-in;
+    -o-transition: var(--time-delay-300) ease-in;
+    transition: var(--time-delay-300) ease-in;
     @apply text-gray-100 font-bold
 }
 
 .card-project {
-    @apply max-w-sm rounded-lg overflow-hidden shadow-lg bg-zinc-900 shadow-stone-900
+    -webkit-transition: var(--time-delay-300) ease-out;
+    -moz-transition: var(--time-delay-300) ease-out;
+    -o-transition: var(--time-delay-300) ease-out;
+    transition: var(--time-delay-300) ease-out;
+    @apply max-w-sm rounded-lg overflow-hidden shadow-md bg-zinc-900
+}
+
+.card-project:hover {
+    -webkit-transition: var(--time-delay-300) ease-in;
+    -moz-transition: var(--time-delay-300) ease-in;
+    -o-transition: var(--time-delay-300) ease-in;
+    transition: var(--time-delay-300) ease-in;
+    
+    @apply shadow-black
 }
 
 .tag-project {
