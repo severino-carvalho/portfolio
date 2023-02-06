@@ -88,22 +88,20 @@ export default function Footer() {
     <footer className={styles.footer}>
       <Container>
         <div className={styles.content}>
-          <div className={styles.perfil}>
-            <div>
-              <div className={styles["img-severino"]}>
-                {/**  Imagem via CSS */}
-              </div>
-              <div>
-                <h2 className="text-lg">Técnico em Informática</h2>
-                <p className="text-sm md:text-md pt-2 text-center opacity-70">
-                  Instituto Federal de Educação Ciência e Tecnologia do Rio
-                  Grande do Norte - IFRN <i>Campus</i> João Câmara
-                </p>
-                <h2 className="text-lg">Pragramação para Internet</h2>
-                <p className="text-sm md:text-md pt-2 text-center opacity-70">
-                  Instituto Metrópole Digital - IMD
-                </p>
-              </div>
+          <div className="pt-2 sm:pt-0">
+            <div className={styles["img-severino"]}>
+              {/**  Imagem via CSS */}
+            </div>
+            <div className="pt-3">
+              <h2 className="text-lg">Técnico em Informática</h2>
+              <p className="text-sm md:text-md pt-2 text-center opacity-70">
+                Instituto Federal de Educação Ciência e Tecnologia do Rio Grande
+                do Norte - IFRN <i>Campus</i> João Câmara
+              </p>
+              <h2 className="text-lg">Pragramação para Internet</h2>
+              <p className="text-sm md:text-md pt-2 text-center opacity-70">
+                Instituto Metrópole Digital - IMD
+              </p>
             </div>
           </div>
 
