@@ -46,38 +46,6 @@
     padding-bottom: 0;
 }
 
-
-
-
-/*  Mobile S - 320px    */
-@media (max-width:320px) {
-    .main article section.sectionCI {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-/*  Mobile M - 375px    */
-@media (max-width:375px) and (min-width: 321px) {}
-
-/*  Mobile L - 425px    */
-@media (max-width:425px) and (min-width: 376px) {}
-
-/*  Tablet - 768px  */
-@media (max-width:768px) and (min-width: 426px) {}
-
-/*  Laptop - 1024px */
-@media (max-width:1024px) and (min-width: 769px) {}
-
-/*  Laptop L - 1440px*/
-@media (min-width: 1024px) {}
-
-@media (max-width:1440px) and (min-width: 1025px) {}
-
-/*  4K - 2560px */
-@media (max-width:2560px) and (min-width: 1441px) {}
-
-
 .habilidades>a {
     display: flex;
 }
@@ -113,11 +81,18 @@ h2 {
 .about a {
     font-weight: bolder;
     text-decoration: none;
-    color: #ffffffcc;
 }
 
 .about a:hover {
     transition: all .35s ease-in !important;
+}
+
+.link-about {
+    @apply no-underline
+}
+
+.link-about:hover {
+    @apply text-violet-600
 }
 
 .skill-item {
@@ -191,6 +166,11 @@ h2 {
     @apply text-blue-500;
 }
 
+.skill-item:hover .skill-icon.postgresql,
+.skill-item:hover .skill-title.postgresql {
+    @apply text-blue-500;
+}
+
 .skill-item:hover .skill-icon.react,
 .skill-item:hover .skill-title.react {
     @apply text-blue-400;
@@ -199,6 +179,11 @@ h2 {
 .skill-item:hover .skill-icon.react-native,
 .skill-item:hover .skill-title.react-native {
     @apply text-green-400;
+}
+
+.skill-item:hover .skill-icon.docker,
+.skill-item:hover .skill-title.docker {
+    @apply text-sky-500;
 }
 
 .skill-item:hover .skill-icon.git,
@@ -280,7 +265,7 @@ h2 {
     -moz-transition: var(--time-delay-300) ease-out;
     -o-transition: var(--time-delay-300) ease-out;
     transition: var(--time-delay-300) ease-out;
-    @apply max-w-sm rounded-lg overflow-hidden shadow-md bg-zinc-900
+    @apply max-w-sm rounded-lg overflow-hidden shadow-md bg-zinc-900 shadow-black sm:shadow-transparent
 }
 
 .card-project:hover {
@@ -288,8 +273,8 @@ h2 {
     -moz-transition: var(--time-delay-300) ease-in;
     -o-transition: var(--time-delay-300) ease-in;
     transition: var(--time-delay-300) ease-in;
-    
-    @apply shadow-black
+
+    @apply md:shadow-black
 }
 
 .tag-project {

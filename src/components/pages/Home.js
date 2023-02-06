@@ -4,6 +4,7 @@ import styles from "./Home.module.css";
 import {
   SiHtml5,
   SiCss3,
+  SiDocker,
   SiReact,
   SiGit,
   SiGithub,
@@ -11,6 +12,7 @@ import {
   SiYarn,
   SiNpm,
   SiMysql,
+  SiPostgresql,
   SiSpring,
   SiJquery,
   SiTypescript,
@@ -34,7 +36,7 @@ export default function Home() {
                 médio em informática pelo Instituto Federal de Educação Ciência
                 e Tecnologia do Rio Grande do Norte <i> Campus </i> João Câmara{" "}
                 <a
-                  className="hover:no-underline hover:decoration-blue-400 hover:text-blue-500"
+                  className={styles["link-about"]}
                   href="https://portal.ifrn.edu.br/campus/joaocamara"
                   target={"_blank"}
                   rel={"noreferrer"}
@@ -45,7 +47,7 @@ export default function Home() {
                 técnico em programação para internet pelo Instituto Metrópole
                 Digital da Universidade Federal do Rio Grande do Norte{" "}
                 <a
-                  className="hover:no-underline hover:decoration-blue-400 hover:text-blue-500"
+                  className={styles["link-about"]}
                   href="https://www.metropoledigital.ufrn.br/portal/ensino/tecnico"
                   target={"_blank"}
                   rel={"noreferrer"}
@@ -56,7 +58,7 @@ export default function Home() {
                 bacharelado em Ciências e Tecnologia na Escola de Ciências e
                 Tecnologia{" "}
                 <a
-                  className="hover:no-underline hover:decoration-blue-400 hover:text-blue-500"
+                  className={styles["link-about"]}
                   href="https://www.ect.ufrn.br/"
                   target={"_blank"}
                   rel={"noreferrer"}
@@ -68,14 +70,13 @@ export default function Home() {
               <p className={styles.about}>
                 Com o conhecimento adquirido, consigo desenvolver atividades
                 front-end utilizando HTML, CSS, Javascript, Bootstrap e ReactJS.
-                Para o back-end desenvolvo utilizando Java com o framework
-                Spring, NodeJS com o framework ExpressJS, Typescript, MySQL e
-                PostgreSQL. Na área do desenvolvimento para dispositivos móveis
-                desenvolvo aplicações utilizando React Native. E para o
-                versionamento de projetos utilizo Git e GitHub. Sou uma pessoa
-                autodidata, apaixonado pela programação, vejo o trabalho em
-                grupo como algo fundamental para o desenvolvimento das
-                atividades.
+                Para o back-end desenvolvo utilizando Docker, Java com o
+                framework Spring, NodeJS com o framework ExpressJS, Typescript,
+                MySQL e PostgreSQL. Na área do desenvolvimento para dispositivos
+                móveis utilizo o React Native. E para o versionamento de
+                projetos utilizo Git e GitHub. Sou uma pessoa autodidata,
+                apaixonado pela programação, vejo o trabalho em grupo como algo
+                fundamental para o desenvolvimento das atividades.
               </p>
             </div>
           </section>
@@ -83,7 +84,7 @@ export default function Home() {
           <section className={styles.habilidades + " pt-12"}>
             <h2 className="text-2xl text-center">Habilidades</h2>
 
-            <div className="grid grid-cols-8 gap-4 pt-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 2xl:grid-cols-9 gap-4 pt-4">
               <div className={styles["skill-item"]}>
                 <span className={styles["skill-icon"] + " " + styles["html"]}>
                   <SiHtml5 />
@@ -150,6 +151,20 @@ export default function Home() {
                   MySQL
                 </span>
               </div>
+
+              <div className={styles["skill-item"]}>
+                <span
+                  className={styles["skill-icon"] + " " + styles["postgresql"]}
+                >
+                  <SiPostgresql />
+                </span>
+                <span
+                  className={styles["skill-title"] + " " + styles["postgresql"]}
+                >
+                  Postgresql
+                </span>
+              </div>
+
               <div className={styles["skill-item"]}>
                 <span className={styles["skill-icon"] + " " + styles["react"]}>
                   <SiReact />
@@ -174,6 +189,18 @@ export default function Home() {
                   React Native
                 </span>
               </div>
+
+              <div className={styles["skill-item"]}>
+                <span className={styles["skill-icon"] + " " + styles["docker"]}>
+                  <SiDocker />
+                </span>
+                <span
+                  className={styles["skill-title"] + " " + styles["docker"]}
+                >
+                  Docker
+                </span>
+              </div>
+
               <div className={styles["skill-item"]}>
                 <span className={styles["skill-icon"] + " " + styles["git"]}>
                   <SiGit />
@@ -271,8 +298,8 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                  <span className={styles["tag-project"]}>#React</span>
                   <span className={styles["tag-project"]}>#Javascript</span>
+                  <span className={styles["tag-project"]}>#React</span>
                   <span className={styles["tag-project"]}>#Tailwind</span>
                   <div>
                     <a
