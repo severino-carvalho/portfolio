@@ -236,7 +236,7 @@ export default function Home() {
           <section className={styles.projects + " pt-12"}>
             <h2 className="text-2xl text-center">Projetos</h2>
 
-            <div className="flex flex-row flex-wrap gap-5 justify-center pt-4">
+            <div className="flex flex-row flex-wrap gap-5 justify-center items-start pt-4">
               <div className={styles["card-project"]}>
                 <div className="px-6 py-4">
                   <div className="font-bold text-xl mb-2">Site IFSol</div>
