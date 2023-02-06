@@ -3,7 +3,7 @@ import styles from "./ContactList.module.css";
 export default function ContactList({ title, list }) {
   return (
     <div className={styles.infoList}>
-      <h3>{title}</h3>
+      <h3 className="text-lg font-bold">{title}</h3>
       <ul className={styles.list_contact}>
         {list.map((item, index) => {
           return (
@@ -16,7 +16,6 @@ export default function ContactList({ title, list }) {
                 title={item.title}
               >
                 <span className="icon_contact">{item.icon}</span>{" "}
-                <span>{item.text}</span>
               </a>
             </li>
           );

@@ -1,38 +1,32 @@
+:root {
+    --time-delay-300: .3s;
+}
+
 .list_contact {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @apply flex flex-wrap flex-row gap-2 pt-1 mb-4
 }
 
 .link_contact {
-    min-width: 5em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    padding: 1em;
-    margin-right: .3em;
-
-    background-color: #ffffff10;
     color: #ffffff7a;
-    border-radius: .5em;
     text-decoration: none;
-}
+    -webkit-transition: var(--time-delay-300) ease-out;
+    -moz-transition: var(--time-delay-300) ease-out;
+    -o-transition: var(--time-delay-300) ease-out;
+    transition: var(--time-delay-300) ease-out;
 
-
-.link_contact:nth-child(n+1) {
-    margin-top: 1em;
+    @apply flex flex-col flex-wrap content-center items-center bg-zinc-800 shadow-md rounded-lg p-3
 }
 
 .link_contact:hover {
-    background-color: #212121;
-    color: #ffffff;
-    transition: all .25s ease-in-out;
+    color: #ffffffdf;
+    -webkit-transition: var(--time-delay-300) ease-out;
+    -moz-transition: var(--time-delay-300) ease-out;
+    -o-transition: var(--time-delay-300) ease-out;
+    transition: var(--time-delay-300) ease-out;
+
+    @apply bg-violet-800
 }
 
 .link_contact svg {
-    font-size: 2em;
+    @apply text-3xl
 }
